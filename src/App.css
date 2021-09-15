@@ -46,6 +46,7 @@
 }
 
 .heading {
+	width: 100%;
 	padding: 1.5rem;
 	display: flex;
 	justify-content: center;
@@ -122,4 +123,27 @@
 	justify-content: center;
 	padding: 1%;
 	color: #960d0d;
+}
+
+@media screen and (max-width: 1000px) {
+	.list {
+		width: 100%;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		justify-content: center;
+		padding: 1%;
+		color: #0d5b96;
+		background-color: rgb(220, 214, 214);
+	}
+}
+@media screen and (max-width: 600px) {
+	.list {
+		width: 100%;
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		justify-content: center;
+		padding: 1%;
+		color: #0d5b96;
+		background-color: rgb(220, 214, 214);
+	}
 }
